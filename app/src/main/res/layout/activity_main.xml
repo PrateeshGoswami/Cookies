@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img_before_eating"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/before_cookie" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cookies"
+
+        android:textAllCaps="true"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_before_eating"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:text="I'm Soooo Hungry" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="changeScreen"
+            android:text="Eat Cookie" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="changeScreenAgain"
+            android:text="More Cookies please"
+            android:id="@+id/change_Screen_Again"/>
+    </LinearLayout>
+</RelativeLayout>
